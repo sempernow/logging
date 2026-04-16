@@ -59,11 +59,11 @@ Vector applies the following transformations to ensure compatibility with Kibana
 
 This ensures **all logs are searchable in Kibana** regardless of their original format.
 
-## Deploy
+## Deploy 
 
 ```bash
 # Apply the complete stack
-kubectl apply -f vector-efk-complete.yaml
+kubectl apply -f evk-complete.yaml
 
 # Wait for Elasticsearch to be ready (takes 2-3 minutes)
 kubectl wait --for=condition=ready pod -l app=elasticsearch -n logging --timeout=300s
@@ -74,6 +74,8 @@ kubectl wait --for=condition=ready pod -l app=kibana -n logging --timeout=300s
 # Wait for Vector DaemonSet to be ready
 kubectl rollout status daemonset/vector -n logging
 ```
+- [`evk-complete.yaml`](evk-complete.yaml)
+
 
 ## Verify
 

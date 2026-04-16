@@ -1,8 +1,8 @@
 # Cluster-level Logging Solutions
 
-## ✅ RECOMMENDED: Vector + Elasticsearch + Kibana
+## EVK (**E**lasticsearch + **V**ector + **K**ibana) 
 
-See __`./evk`__
+✅ **RECOMMENDED**. See __`./vector`__
 
 **Status: WORKING - Captures ALL application logs with zero per-app configuration**
 
@@ -12,7 +12,7 @@ make vector-status     # Check status
 make vector-logs       # View collector logs
 ```
 
-See **[DEPLOY-VECTOR.md](DEPLOY-VECTOR.md)** for complete deployment guide.
+See **[DEPLOY-VECTOR.md](vector/DEPLOY-VECTOR.md)** for complete deployment guide.
 
 ### Why This Works (When Fluentd/Fluent-bit Failed)
 
